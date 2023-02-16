@@ -47,18 +47,6 @@ setuptools.setup(
         "pyyaml",
         "Pillow>=7.1",
     ],
-    extras_require={
-        "gui": [
-            "pyside6<6.3.2",
-            "qdarkstyle==3.1",
-            "napari-deeplabcut>=0.0.9",
-        ],
-        "openvino": ["openvino-dev==2022.1.0"],
-        "docs": ["numpydoc"],
-        "tf": ["tensorflow>=2.0,<=2.10"],  # Last supported TF version on Windows Native
-        "apple_mchips": [],
-        "modelzoo": ["huggingface_hub"],
-    },
     scripts=["deeplabcut/pose_estimation_tensorflow/models/pretrained/download.sh"],
     packages=setuptools.find_packages(),
     data_files=[
